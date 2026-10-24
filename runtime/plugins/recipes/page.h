@@ -1,5 +1,5 @@
 /* grade-sd Recipes: the menu page. Row n is recipe n + 1 of RECIPES/NAMES.TXT,
-   whose name INSTALL writes to GRKIT_RECIPES. OK only records the request:
+   whose name INSTALL writes to GRKIT_RECIPES. The page only records requests:
    the resident loader sees the new serial and applies RECIPES/Rnnn.TXT
    through the camera's own settings commands. */
 #include "../../plugin.h"
@@ -26,11 +26,26 @@ static u32 recipe_icon(volatile u32 *h,u32 row) {
 static u32 recipe_checked(volatile u32 *h,u32 row) {
     return h[GRKIT_PLUGIN_RECIPES_ACTIVE/4]==row+1;
 }
-static void recipe_apply(volatile u32 *h,u32 row) {
-    h[GRKIT_PLUGIN_RECIPES_ACTIVE/4]=row+1;
+/* Ask the resident loader for a recipe. A native recipe replaces a GRKit
+   effect, which would otherwise keep overriding it. */
+static void recipe_request(volatile u32 *h,u32 row) {
+    h[GRKIT_HOST_ACTIVE/4]=0;
+    if(h[GRKIT_PLUGIN_RECIPES_REQUEST/4]==row+1) return;
     h[GRKIT_PLUGIN_RECIPES_REQUEST/4]=row+1;
     ++h[GRKIT_PLUGIN_RECIPES_SERIAL/4];
+}
+/* OK keeps the recipe. A row that the preview already applied needs no
+   second run. */
+static void recipe_apply(volatile u32 *h,u32 row) {
+    h[GRKIT_PLUGIN_RECIPES_ACTIVE/4]=row+1;
+    recipe_request(h,row);
     ++h[GRKIT_HOST_MENU_APPLIES/4];
+}
+/* Highlighting a row previews it. When the page closes without OK, the
+   loader applies the active recipe again. */
+static void recipe_preview(volatile u32 *h) {
+    u32 row=h[GRKIT_HOST_MENU_CURSOR/4];
+    if(row<recipe_count(h)) recipe_request(h,row);
 }
 static u32 recipe_committed(volatile u32 *h) {
     u32 active=h[GRKIT_PLUGIN_RECIPES_ACTIVE/4];
@@ -38,4 +53,4 @@ static u32 recipe_committed(volatile u32 *h) {
 }
 
 #define RECIPES_PAGE {recipe_title,recipe_summary,recipe_rows,recipe_label,recipe_icon, \
-    recipe_checked,recipe_apply,recipe_committed,0,0,RECIPES_TILES}
+    recipe_checked,recipe_apply,recipe_committed,recipe_preview,0,RECIPES_TILES}

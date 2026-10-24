@@ -60,7 +60,8 @@ pub const STATE_MAX_BYTES: usize = 1024;
 /// The resident loader reads the selections at this interval. It writes the
 /// state file when two reads in a row agree, so a change reaches the card
 /// one to two intervals after the last change.
-pub const STATE_POLL_MS: u32 = 2000;
+// grade-sd: 1 s, so a recipe preview follows the cursor sooner.
+pub const STATE_POLL_MS: u32 = 1000;
 
 /// `STATE.TXT` keeps the state keys of the plugins (`plugins::state_keys`).
 /// The file holds two lines for each key: the key ID (`state_key_id`), then
@@ -294,7 +295,21 @@ fn state_script() -> Vec<String> {
     };
     let serial = plugin_word("PLUGIN_RECIPES_SERIAL");
     let request = plugin_word("PLUGIN_RECIPES_REQUEST");
+    let active = plugin_word("PLUGIN_RECIPES_ACTIVE");
     lines.push(format!("rlast = {serial}"));
+    // The log grows across power cycles.
+    lines.extend([
+        r"filesearch 'C:\SCRIPT\PLUGINS\RECIPE.LOG'".to_string(),
+        "if result = 0 goto recipe_log_new".to_string(),
+        r"fileopen lfh 'C:\SCRIPT\PLUGINS\RECIPE.LOG' 1".to_string(),
+        "goto recipe_log_ready".to_string(),
+        ":recipe_log_new".to_string(),
+        r"filecreate lfh 'C:\SCRIPT\PLUGINS\RECIPE.LOG'".to_string(),
+        ":recipe_log_ready".to_string(),
+        "if lfh < 0 goto watch".to_string(),
+        "filewriteln lfh 'resident'".to_string(),
+        "fileclose lfh".to_string(),
+    ]);
 
     // Save after a change, when two polls in a row read the same selections.
     // A series of changes, such as Fn adjustments, then writes the card once
@@ -308,27 +323,77 @@ fn state_script() -> Vec<String> {
         "call save".into(),
         "call recipe".into(),
         "goto watch".into(),
+        // Every step goes to RECIPE.LOG, one open-write-close each, so a
+        // step that ends the script still leaves the steps before it.
         ":recipe".into(),
         format!("rs = {serial}"),
-        "if rs = rlast return".into(),
+        "if rs != rlast goto recipe_new".into(),
+        // A preview that the page left without OK: apply the active recipe.
+        format!("rq = {request}"),
+        format!("ra = {active}"),
+        "if rq = ra goto recipe_exit".into(),
+        "if ra < 1 goto recipe_exit".into(),
+        format!("rl = {}", word(crate::abi::HOST_MENU_LEVEL)),
+        "if rl = 2 goto recipe_exit".into(),
+        format!("{request} = ra"),
+        "rq = ra".into(),
+        "int2str lmsg rq".into(),
+        "strconcat lmsg ' restore'".into(),
+        "call recipe_log".into(),
+        "goto recipe_apply".into(),
+        ":recipe_new".into(),
         "rlast = rs".into(),
         format!("rq = {request}"),
-        "if rq < 1 return".into(),
-        format!("if rq > {} return", crate::abi::RECIPE_MAX),
+        "int2str lmsg rq".into(),
+        "strconcat lmsg ' request'".into(),
+        "call recipe_log".into(),
+        ":recipe_apply".into(),
+        "if rq < 1 goto recipe_exit".into(),
+        format!("if rq > {} goto recipe_exit", crate::abi::RECIPE_MAX),
         r"sprintf2 rpath 'C:\SCRIPT\PLUGINS\RECIPES\R%03d.TXT' rq".into(),
+        "lmsg = rpath".into(),
+        "call recipe_log".into(),
         "fileopen rfh rpath 0".into(),
-        "if rfh < 0 return".into(),
+        "int2str lmsg rfh".into(),
+        "strconcat lmsg ' open'".into(),
+        "call recipe_log".into(),
+        "if rfh < 0 goto recipe_exit".into(),
+        "rlines = 0".into(),
         ":recipe_line".into(),
         "filereadln rfh rline".into(),
-        "if result != 0 goto recipe_end".into(),
+        "rr = result".into(),
+        "int2str lmsg rr".into(),
+        "strconcat lmsg ' read'".into(),
+        "call recipe_log".into(),
+        "if rr != 0 goto recipe_end".into(),
+        // The camera's filereadln stops the script at the end of the file, so
+        // the empty line that ends each recipe file ends the loop first.
         "strlen rline".into(),
-        "if result = 0 goto recipe_line".into(),
+        "if result = 0 goto recipe_end".into(),
         "rcmd = 'UserData Set '".into(),
         "strconcat rcmd rline".into(),
+        "lmsg = rcmd".into(),
+        "call recipe_log".into(),
         "sendln rcmd".into(),
+        "rr = result".into(),
+        "rlines = rlines + 1".into(),
+        "int2str lmsg rr".into(),
+        "strconcat lmsg ' sent'".into(),
+        "call recipe_log".into(),
         "goto recipe_line".into(),
         ":recipe_end".into(),
         "fileclose rfh".into(),
+        "int2str lmsg rlines".into(),
+        "strconcat lmsg ' lines done'".into(),
+        "call recipe_log".into(),
+        ":recipe_exit".into(),
+        "return".into(),
+        ":recipe_log".into(),
+        r"fileopen lfh 'C:\SCRIPT\PLUGINS\RECIPE.LOG' 1".into(),
+        "if lfh < 0 goto recipe_log_end".into(),
+        "filewriteln lfh lmsg".into(),
+        "fileclose lfh".into(),
+        ":recipe_log_end".into(),
         "return".into(),
         ":save".into(),
         "stable = 1".into(),
