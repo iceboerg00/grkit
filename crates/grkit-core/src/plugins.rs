@@ -320,7 +320,12 @@ pub const PLUGINS: [Plugin; 6] = [
                 doc: "Incremented by each OK on a recipe row.",
             },
         ],
-        state: &[],
+        // The active recipe survives a restart, so the page opens on it.
+        state: &[StateKey {
+            name: "active",
+            slot: Slot::Own(1),
+            max: 100,
+        }],
         tiles: 2,
         artwork: artwork::recipes_tiles,
         handlers: None,
