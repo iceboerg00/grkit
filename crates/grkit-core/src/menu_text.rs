@@ -22,7 +22,7 @@ pub const TEXT_SETTINGS: usize = TEXT_PARAMETER_TITLE - 256;
 /// The units of the longest string with its NUL, and of each summary slot.
 pub const SUMMARY_UNITS: usize = 32;
 /// The number of strings in each language (`GRKIT_TEXT_STRINGS`).
-pub const STRINGS: usize = 56;
+pub const STRINGS: usize = 57;
 /// The longest effect name in a record.
 const NAME_UNITS: usize = 16;
 
@@ -222,6 +222,7 @@ pub const RUNS: &[Run] = &[
         "The Image Control summary before an effect name, for the installer.",
     ),
     run("VERSION", 1, "The About row: the GRKit version."),
+    run("RECIPES", 1, "grade-sd: the Recipes page title, the same in each language."),
 ];
 
 /// The first string ID of each run, in table order.
@@ -272,6 +273,7 @@ fn run_strings(w: &Words, name: &str, version: &str) -> Vec<String> {
         "GRAIN_SUMMARY" => summaries(w.grain, &w.grain_levels),
         "IMAGE_PREFIX" => vec![format!("{}{}", w.image_control, w.separator)],
         "VERSION" => vec![format!("{} {version}", w.version)],
+        "RECIPES" => vec!["Recipes".to_string()],
         _ => unreachable!("Unknown menu text run {name}"),
     }
 }

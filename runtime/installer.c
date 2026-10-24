@@ -38,6 +38,7 @@ static const char lock_path[] = LOCK_PATH;
 static const char done_path[] = DONE_PATH;
 static const char failed_path[] = FAILED_PATH;
 static const char plugins_path[] = PLUGINS_PATH;
+static const char recipe_names_path[] = RECIPE_NAMES_PATH;
 static volatile u8 *at(u32 physical) { return mapping + physical - MAP_BASE; }
 static u32 get32(const u8 *p) { return p[0] | p[1] << 8 | p[2] << 16 | (u32)p[3] << 24; }
 static void put32(u8 *p, u32 v) { for (u32 i=0; i<4; ++i) p[i] = v >> (i*8); }
@@ -100,6 +101,33 @@ static int read_selection(u32 *selected)
     if (got < 0) return 44;
     if (have > SELECTION_FILE_MAX || !selection_parse(text, have, selected)) return 43;
     return 0;
+}
+/* grade-sd: writes the names of RECIPES/NAMES.TXT, one per line, as UTF-16
+   to `names` (GRKIT_RECIPES) and returns their count. Each name keeps at most
+   GRKIT_RECIPE_UNITS - 1 bytes; bytes above 0x7e show as '?'. A missing file
+   gives no recipes. */
+static u8 recipe_text[GRKIT_RECIPE_MAX * 64];
+static u32 read_recipe_names(u32 names)
+{
+    u32 have = 0, n = 0, unit = 0; long got = 0;
+    long fd = syscall6(5, (u32)recipe_names_path, 0x8800, 0, 0, 0, 0);
+    zero(at(names), GRKIT_RECIPE_MAX * GRKIT_RECIPE_UNITS * 2);
+    if (fd < 0) return 0;
+    while (have < sizeof(recipe_text)) {
+        got = syscall6(3, fd, (u32)(recipe_text + have), sizeof(recipe_text) - have, 0, 0, 0);
+        if (got <= 0) break;
+        have += (u32)got;
+    }
+    syscall6(6, fd, 0, 0, 0, 0, 0);
+    for (u32 i = 0; i < have && n < GRKIT_RECIPE_MAX; ++i) {
+        u8 c = recipe_text[i];
+        if (c == '\r') continue;
+        if (c == '\n') { if (unit) ++n; unit = 0; continue; }
+        if (unit >= GRKIT_RECIPE_UNITS - 1) continue;
+        ((volatile u16 *)at(names + n * GRKIT_RECIPE_UNITS * 2))[unit++] = c >= 0x20 && c <= 0x7e ? c : '?';
+    }
+    if (unit && n < GRKIT_RECIPE_MAX) ++n;
+    return n;
 }
 static long directory_read(long fd, u8 *buffer, u32 size)
 { return syscall6(217,fd,(u32)buffer,size,0,0,0); }
@@ -469,6 +497,9 @@ static int install(void)
     copy(at(text), menu_text, MENU_TEXT_BYTES);
     _Static_assert(LABELS_BYTES <= GRKIT_LABELS_SIZE, "Live-view labels exceed their area");
     copy(at(text + GRKIT_TEXT_SIZE), overlay_labels, LABELS_BYTES);
+    /* grade-sd: the recipe names after the labels (GRKIT_RECIPES). */
+    store(base + GRKIT_PLUGIN_RECIPES_COUNT,
+          read_recipe_names(text + GRKIT_TEXT_SIZE + GRKIT_LABELS_SIZE));
 #ifndef GRKIT_NO_IMAGE_CONTROL
     for (u32 i = 0; i < count; ++i) {
         u32 record = base + GRKIT_HOST_HEADER_SIZE + i * GRKIT_RECORD_SIZE;

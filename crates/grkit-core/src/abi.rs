@@ -219,9 +219,14 @@ pub const SHOT_RECORD: usize = 4;
 pub const PICTURE_SCRATCH: usize = PICTURE_MASKS + SHOT_ENTRY + SHOT_STRIDE * SHOT_ENTRIES;
 /// Bytes of the live-view labels after the menu text (`artwork::overlay_labels`).
 pub const LABELS_SIZE: usize = 16384;
-/// Everything after the records: the picture scratch, the menu text, then the
-/// live-view labels.
-pub const TAIL_SIZE: usize = PICTURE_SCRATCH + menu_text::TEXT_SIZE + LABELS_SIZE;
+/// grade-sd: the recipe names after the live-view labels: RECIPE_MAX
+/// NUL-terminated UTF-16 names of RECIPE_UNITS units each.
+pub const RECIPE_MAX: usize = 100;
+pub const RECIPE_UNITS: usize = 32;
+pub const RECIPES_SIZE: usize = RECIPE_MAX * RECIPE_UNITS * 2;
+/// Everything after the records: the picture scratch, the menu text, the
+/// live-view labels, then the recipe names.
+pub const TAIL_SIZE: usize = PICTURE_SCRATCH + menu_text::TEXT_SIZE + LABELS_SIZE + RECIPES_SIZE;
 // The summaries of every record in every menu language end before the
 // parameter page title.
 const _: () = assert!(
@@ -483,6 +488,9 @@ pub fn header() -> String {
         "#define GRKIT_TEXT(h) ((h)[GRKIT_HOST_RECORDS/4]+(h)[GRKIT_HOST_COUNT/4]*GRKIT_RECORD_SIZE+GRKIT_PICTURE_SCRATCH)\n",
     );
     out.push_str("#define GRKIT_LABELS(h) (GRKIT_TEXT(h)+GRKIT_TEXT_SIZE)\n");
+    writeln!(out, "#define GRKIT_RECIPE_MAX {RECIPE_MAX}").unwrap();
+    writeln!(out, "#define GRKIT_RECIPE_UNITS {RECIPE_UNITS}").unwrap();
+    out.push_str("#define GRKIT_RECIPES(h) (GRKIT_LABELS(h)+GRKIT_LABELS_SIZE)\n");
     writeln!(
         out,
         "#define GRKIT_LABEL_COUNT {}",

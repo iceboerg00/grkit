@@ -675,6 +675,16 @@ pub fn grain_tiles() -> Vec<Vec<u8>> {
     tiles
 }
 
+/// grade-sd: the Recipes page. Tile 0 is its root tile, tile 1 the tile of
+/// each recipe row.
+pub fn recipes_tiles() -> Vec<Vec<u8>> {
+    let mut module = background();
+    text(&mut module, "RCP", LABEL_SIZE, LABEL_WIDTH, 20.0, 255);
+    let mut row = background();
+    text(&mut row, "Rcp", 11.0, LABEL_WIDTH, 24.0, 255);
+    vec![module, row]
+}
+
 /// The GRKit entry of the ADJ toolbar.
 pub fn plugins_pixels() -> Vec<u8> {
     let mut rgba = toolbar_background();

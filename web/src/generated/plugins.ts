@@ -9,13 +9,14 @@ export const PLUGINS = [
   { key: 'guides', plugin: 'guides', needsEffects: false },
   { key: 'dateStamp', plugin: 'date-stamp', needsEffects: false },
   { key: 'grain', plugin: 'grain', needsEffects: false },
+  { key: 'recipes', plugin: 'recipes', needsEffects: false },
 ] as const;
 
 export type PluginKey = (typeof PLUGINS)[number]['key'];
 
 /** The plugins that the runtime of each camera has, in menu order. */
 export const CAMERA_PLUGINS = {
-  gr3: ['imageControl', 'framing', 'guides', 'dateStamp', 'grain'],
-  gr3x: ['imageControl', 'framing', 'guides', 'dateStamp', 'grain'],
-  gr4: ['imageControl', 'framing', 'guides', 'dateStamp', 'grain'],
+  gr3: ['imageControl', 'framing', 'guides', 'dateStamp', 'grain', 'recipes'],
+  gr3x: ['imageControl', 'framing', 'guides', 'dateStamp', 'grain', 'recipes'],
+  gr4: ['imageControl', 'framing', 'guides', 'dateStamp', 'grain', 'recipes'],
 } as const satisfies Readonly<Record<string, readonly PluginKey[]>>;

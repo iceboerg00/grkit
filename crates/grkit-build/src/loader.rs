@@ -168,6 +168,8 @@ pub fn header(plan: &PatchPlan, body: &FirmwareImage, version: &str) -> Result<S
         ("DONE_PATH", "INSTALL.OK"),
         ("FAILED_PATH", "INSTALL.ERR"),
         ("PLUGINS_PATH", "PLUGINS.TXT"),
+        // grade-sd: the recipe names, one per line.
+        ("RECIPE_NAMES_PATH", "RECIPES/NAMES.TXT"),
     ] {
         writeln!(
             result,

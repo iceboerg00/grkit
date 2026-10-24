@@ -39,7 +39,7 @@ pub const ICONS_PER_CHUNK: usize = 40;
 pub const HOST_ICON_COUNT: usize = 3 + plugins::TILES;
 const _: () = assert!(HOST_ICON_COUNT <= ICONS_PER_CHUNK);
 /// Product limit for private Image Control effects.
-pub const MAX_COUNT: usize = 20;
+pub const MAX_COUNT: usize = 18;
 // One script array holds the header, every record, the scratch, and the text: at most 65536 words.
 const _: () = assert!(HEADER_SIZE + MAX_COUNT * RECORD_SIZE + TAIL_SIZE <= 65536 * 4);
 const _: () = assert!(PICTURE_SCRATCH.is_multiple_of(4) && TAIL_SIZE.is_multiple_of(4));
@@ -282,6 +282,19 @@ fn state_script() -> Vec<String> {
     let state_keys = plugins::state_keys();
     let keys = state_keys.iter().enumerate();
     let mut lines: Vec<String> = vec![":resident".into(), "call restore".into()];
+    // grade-sd: the Recipes plugin asks for a recipe with its request and
+    // serial words. The loop applies RECIPES/Rnnn.TXT, one "name value" pair
+    // per line, through the camera's UserData command.
+    let plugin_word = |name: &str| {
+        let entry = plugins::words()
+            .into_iter()
+            .find(|w| w.name == name)
+            .expect("a recipes word");
+        format!("registry[{}]", entry.offset / 4)
+    };
+    let serial = plugin_word("PLUGIN_RECIPES_SERIAL");
+    let request = plugin_word("PLUGIN_RECIPES_REQUEST");
+    lines.push(format!("rlast = {serial}"));
 
     // Save after a change, when two polls in a row read the same selections.
     // A series of changes, such as Fn adjustments, then writes the card once
@@ -293,7 +306,30 @@ fn state_script() -> Vec<String> {
         format!("mpause {STATE_POLL_MS}"),
         "call snapshot".into(),
         "call save".into(),
+        "call recipe".into(),
         "goto watch".into(),
+        ":recipe".into(),
+        format!("rs = {serial}"),
+        "if rs = rlast return".into(),
+        "rlast = rs".into(),
+        format!("rq = {request}"),
+        "if rq < 1 return".into(),
+        format!("if rq > {} return", crate::abi::RECIPE_MAX),
+        r"sprintf2 rpath 'C:\SCRIPT\PLUGINS\RECIPES\R%03d.TXT' rq".into(),
+        "fileopen rfh rpath 0".into(),
+        "if rfh < 0 return".into(),
+        ":recipe_line".into(),
+        "filereadln rfh rline".into(),
+        "if result != 0 goto recipe_end".into(),
+        "strlen rline".into(),
+        "if result = 0 goto recipe_line".into(),
+        "rcmd = 'UserData Set '".into(),
+        "strconcat rcmd rline".into(),
+        "sendln rcmd".into(),
+        "goto recipe_line".into(),
+        ":recipe_end".into(),
+        "fileclose rfh".into(),
+        "return".into(),
         ":save".into(),
         "stable = 1".into(),
     ]);

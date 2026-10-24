@@ -169,7 +169,7 @@ fn no_artwork() -> Vec<Vec<u8>> {
 
 /// The plugins in menu order. Plugin n is bit n of a selection
 /// (`GRKIT_HOST_PLUGINS`) and module n of the menu.
-pub const PLUGINS: [Plugin; 5] = [
+pub const PLUGINS: [Plugin; 6] = [
     Plugin {
         id: "image-control",
         points: &[Point::MenuPage, Point::Tuning, Point::PictureEncode],
@@ -293,6 +293,36 @@ pub const PLUGINS: [Plugin; 5] = [
         }],
         tiles: 4,
         artwork: artwork::grain_tiles,
+        handlers: None,
+        layers: &[],
+        encoders: &[],
+    },
+    // grade-sd: native Image Control recipes from the card.
+    Plugin {
+        id: "recipes",
+        points: &[Point::MenuPage],
+        needs_effects: false,
+        words: &[
+            Word {
+                name: "count",
+                doc: "Recipes that INSTALL read from RECIPES/NAMES.TXT. Their                       names follow the live-view labels (GRKIT_RECIPES).",
+            },
+            Word {
+                name: "active",
+                doc: "The recipe last applied, 1-based, or 0.",
+            },
+            Word {
+                name: "request",
+                doc: "The recipe that OK asked for, 1-based. The resident loader                       applies RECIPES/Rnnn.TXT when the serial changes.",
+            },
+            Word {
+                name: "serial",
+                doc: "Incremented by each OK on a recipe row.",
+            },
+        ],
+        state: &[],
+        tiles: 2,
+        artwork: artwork::recipes_tiles,
         handlers: None,
         layers: &[],
         encoders: &[],

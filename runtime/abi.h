@@ -149,6 +149,16 @@
 /* Grain level: 0 Off, 1 weak, 2 medium, 3 strong. The native grain stage of
    recorded pictures uses it instead of the native grain settings. */
 #define GRKIT_PLUGIN_GRAIN_LEVEL 260
+/* Recipes that INSTALL read from RECIPES/NAMES.TXT. Their names follow the
+   live-view labels (GRKIT_RECIPES). */
+#define GRKIT_PLUGIN_RECIPES_COUNT 264
+/* The recipe last applied, 1-based, or 0. */
+#define GRKIT_PLUGIN_RECIPES_ACTIVE 268
+/* The recipe that OK asked for, 1-based. The resident loader applies
+   RECIPES/Rnnn.TXT when the serial changes. */
+#define GRKIT_PLUGIN_RECIPES_REQUEST 272
+/* Incremented by each OK on a recipe row. */
+#define GRKIT_PLUGIN_RECIPES_SERIAL 276
 
 /* An Image Control record. The records follow the header. */
 #define GRKIT_RECORD_SIZE 0x1100
@@ -246,7 +256,7 @@
    at 8 n. Each pixel is one byte of text coverage, row by row. */
 #define GRKIT_LABELS_SIZE 16384
 /* Everything after the records: the script array must hold it. */
-#define GRKIT_TAIL_SIZE 174216
+#define GRKIT_TAIL_SIZE 180616
 #define GRKIT_TEXT_SUMMARY 8192
 /* The parameter page title of a GRKit session, after the summaries: the page,
    its vtable, and the descriptor of the effect name. */
@@ -256,9 +266,12 @@
    show settings (runtime/menu.c). */
 #define GRKIT_TEXT_SETTINGS 16112
 #define GRKIT_TEXT_LANGUAGES 4
-#define GRKIT_TEXT_RECORDS 20
+#define GRKIT_TEXT_RECORDS 18
 #define GRKIT_TEXT(h) ((h)[GRKIT_HOST_RECORDS/4]+(h)[GRKIT_HOST_COUNT/4]*GRKIT_RECORD_SIZE+GRKIT_PICTURE_SCRATCH)
 #define GRKIT_LABELS(h) (GRKIT_TEXT(h)+GRKIT_TEXT_SIZE)
+#define GRKIT_RECIPE_MAX 100
+#define GRKIT_RECIPE_UNITS 32
+#define GRKIT_RECIPES(h) (GRKIT_LABELS(h)+GRKIT_LABELS_SIZE)
 #define GRKIT_LABEL_COUNT 7
 /* String IDs of the label table, in grkit_core::menu_text order. A run of IDs
    follows the rows or values that it names. */
@@ -291,6 +304,8 @@
 #define TEXT_IMAGE_PREFIX 54
 /* The About row: the GRKit version. */
 #define TEXT_VERSION 55
-#define GRKIT_TEXT_STRINGS 56
+/* grade-sd: the Recipes page title, the same in each language. */
+#define TEXT_RECIPES 56
+#define GRKIT_TEXT_STRINGS 57
 
 #endif
