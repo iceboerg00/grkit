@@ -370,8 +370,9 @@ fn state_script() -> Vec<String> {
         // the empty line that ends each recipe file ends the loop first.
         "strlen rline".into(),
         "if result = 0 goto recipe_end".into(),
-        "rcmd = 'UserData Set '".into(),
-        "strconcat rcmd rline".into(),
+        // Each line is a whole engineering-shell command (UserData Set,
+        // camctl_set_user_still_imgctl_custom_name).
+        "rcmd = rline".into(),
         "lmsg = rcmd".into(),
         "call recipe_log".into(),
         "sendln rcmd".into(),
