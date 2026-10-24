@@ -177,7 +177,8 @@ fn runtime_target(runtime: &Files, camera: &Camera) -> Result<&'static str> {
 /// single installer of earlier packages.
 fn package_targets(runtime: &Files, camera: &Camera) -> Result<Vec<&'static str>> {
     let targets = camera.targets();
-    if targets.len() == 1 {
+    // grade-sd: a package with the first installer only is a one-build package.
+    if targets.len() == 1 || !runtime.contains_key(&runtime::installer_path(1)) {
         return Ok(vec![runtime_target(runtime, camera)?]);
     }
     let binaries: Vec<&[u8]> = (0..targets.len())
@@ -226,8 +227,10 @@ fn check_installer(binary: &[u8]) -> Result<()> {
 /// order (`runtime::package_runtime_files`).
 fn package_runtime(runtimes: &[VerifiedRuntime], camera: &Camera) -> Result<Files> {
     let targets: Vec<&str> = runtimes.iter().map(VerifiedRuntime::target).collect();
+    // grade-sd: a leading subset is enough (our camera runs gr4-1.11 only; the
+    // factory build 1.20-0528 has no public firmware).
     ensure!(
-        targets == camera.targets(),
+        !targets.is_empty() && camera.targets().starts_with(&targets),
         "A package for {} needs the runtime of each of its builds in release order: {}",
         camera.name,
         camera.targets().join(", ")
@@ -568,7 +571,10 @@ pub fn validate_contents(contents: &Files) -> Result<Contents> {
         bail!("Package must have the ModeSet file of exactly one camera");
     };
     let activation = runtime::activation_files(camera);
-    let installers = camera.targets().len();
+    // grade-sd: count the installers that the package has (a leading subset).
+    let installers = 1 + (1..camera.targets().len())
+        .take_while(|&i| contents.contains_key(&format!("SD_ROOT/{}", runtime::installer_path(i))))
+        .count();
     let runtime_paths: Vec<String> = RUNTIME_PATHS
         .iter()
         .map(|name| (*name).to_owned())

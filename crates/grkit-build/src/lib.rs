@@ -226,6 +226,11 @@ fn build_image(
     fs::create_dir(output)
         .with_context(|| format!("Create new build directory {}", output.display()))?;
     let output = output.canonicalize()?;
+    // Windows: Clang resolves no relative include below a verbatim \\?\ path.
+    let output = match output.to_str().and_then(|s| s.strip_prefix(r"\\?\")) {
+        Some(plain) => std::path::PathBuf::from(plain),
+        None => output,
+    };
     let objects = output.join("objects");
     let runtime = objects.join("runtime");
     materialize_runtime(&runtime)?;
