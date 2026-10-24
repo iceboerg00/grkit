@@ -1,0 +1,21 @@
+UserData Set StillImageControlNo1 BleechBypass_GR
+UserData Set StillActiveImageControlSet No1
+UserData Set StillImageControlNo1ParamBleechBypass_GRSaturation P4
+UserData Set StillImageControlNo1ParamBleechBypass_GRColorHue M2
+UserData Set StillImageControlNo1ParamBleechBypass_GRImageKey M4
+UserData Set StillImageControlNo1ParamBleechBypass_GRContrast M2
+UserData Set StillImageControlNo1ParamBleechBypass_GRContrastHighLight P3
+UserData Set StillImageControlNo1ParamBleechBypass_GRContrastShadow P2
+UserData Set StillImageControlNo1ParamBleechBypass_GRSharpness M2
+UserData Set StillImageControlNo1ParamBleechBypass_GRColorToneBleechBypass Cool
+UserData Set StillImageControlNo1ParamBleechBypass_GRShading M1
+UserData Set StillImageControlNo1ParamBleechBypass_GRClarityControl M4
+UserData Set StillWhiteBalance Shade
+UserData Set StillWhiteBalanceShadeAdjustBA B10
+UserData Set StillWhiteBalanceShadeAdjustGM G12
+UserData Set StillHighlightCorrect On
+UserData Set StillShadowCorrect Mid
+UserData Set StillLensShadingCorrection On
+UserData Set StillHighIsoNR Off
+camctl_set_user_still_imgctl_custom_name 1 "Aged And Faded"
+

@@ -1,0 +1,161 @@
+BleechBypass_GRClarityControl                 0x5341d4ac  M4 M3 M2 M1 OFF P1 P2 P3 P4
+BleechBypass_GRColorHue                       0x53411b00  M4 M3 M2 M1 OFF P1 P2 P3 P4
+BleechBypass_GRColorToneBleechBypass          0x53419f9c  Normal Cool Warm
+BleechBypass_GRContrast                       0x53414c5c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+BleechBypass_GRContrastHighLight              0x53416420  M4 M3 M2 M1 OFF P1 P2 P3 P4
+BleechBypass_GRContrastShadow                 0x53417be4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+BleechBypass_GRImageKey                       0x53413498  M4 M3 M2 M1 OFF P1 P2 P3 P4
+BleechBypass_GRSaturation                     0x534108b8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+BleechBypass_GRShading                        0x5341bebc  M4 M3 M2 M1 OFF P1 P2 P3 P4
+BleechBypass_GRSharpness                      0x534193a8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenClarityControl                     0x5341d2d8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenColorHue                           0x5341192c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenColorToneCinema                    0x53419ee8  Low Mid High
+CinemaGreenContrast                           0x53414a88  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenContrastHighLight                  0x5341624c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenContrastShadow                     0x53417a10  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenImageKey                           0x534132c4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenParticle                           0x5341e79c  Off On
+CinemaGreenParticleSize                       0x5341e820  Small Medium Large
+CinemaGreenParticleStrength                   0x5341e8d4  Low Mid High
+CinemaGreenSaturation                         0x534106e4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenShading                            0x5341bce8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaGreenSharpness                          0x534191d4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowClarityControl                    0x5341d104  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowColorHue                          0x53411758  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowColorToneCinema                   0x53419e34  Low Mid High
+CinemaYellowContrast                          0x534148b4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowContrastHighLight                 0x53416078  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowContrastShadow                    0x5341783c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowImageKey                          0x534130f0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowParticle                          0x5341e5b0  Off On
+CinemaYellowParticleSize                      0x5341e634  Small Medium Large
+CinemaYellowParticleStrength                  0x5341e6e8  Low Mid High
+CinemaYellowSaturation                        0x53410510  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowShading                           0x5341bb14  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CinemaYellowSharpness                         0x53419000  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessClarityControl                    0x5341d854  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessColorHue                          0x5341207c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessColorToneCrossProcess             0x5341ea3c  Basic Magenta Yellow
+CrossProcessContrast                          0x53415004  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessContrastHighLight                 0x534167c8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessContrastShadow                    0x53417f8c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessImageKey                          0x53413840  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessSaturation                        0x53410e34  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessShading                           0x5341c264  M4 M3 M2 M1 OFF P1 P2 P3 P4
+CrossProcessSharpness                         0x53419750  M4 M3 M2 M1 OFF P1 P2 P3 P4
+FilterEffectBCustom1                          0x5341a724  
+FilterEffectBCustom2                          0x5341a8bc  
+FilterEffectBCustom3                          0x5341aa54  
+FilterEffectBCustom4                          0x5341abec  
+FilterEffectGCustom1                          0x5341a69c  
+FilterEffectGCustom2                          0x5341a834  
+FilterEffectGCustom3                          0x5341a9cc  
+FilterEffectGCustom4                          0x5341ab64  
+FilterEffectRCustom1                          0x5341a614  
+FilterEffectRCustom2                          0x5341a7ac  
+FilterEffectRCustom3                          0x5341a944  
+FilterEffectRCustom4                          0x5341aadc  
+HardMonotoneClarityControl                    0x5341c9b4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HardMonotoneColorToneMonotone                 0x53419bac  OFF Sepia Red Green Blue Purple
+HardMonotoneContrast                          0x53414164  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HardMonotoneContrastHighLight                 0x53415928  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HardMonotoneContrastShadow                    0x534170ec  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HardMonotoneImageKey                          0x534129a0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HardMonotoneParticle                          0x5341de00  Off On
+HardMonotoneParticleSize                      0x5341de84  Small Medium Large
+HardMonotoneParticleStrength                  0x5341df38  Low Mid High
+HardMonotoneShading                           0x5341b3c4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HardMonotoneSharpness                         0x534188b0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HdrCuisineColorHue                            0x53411ea8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HdrCuisineColorToneHdrIntense                 0x5341a224  OFF BW Sepia
+HdrCuisineHdrIntense                          0x5341e988  Low Mid High
+HdrCuisineSaturation                          0x53410c60  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HighContrastBWClarityControl                  0x5341cb88  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HighContrastBWColorToneMonotone               0x53419cf0  OFF Sepia Red Green Blue Purple
+HighContrastBWContrast                        0x53414338  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HighContrastBWContrastHighLight               0x53415afc  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HighContrastBWContrastShadow                  0x534172c0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HighContrastBWFilterEffectCustom              0x5341a500  OFF Custom1 Custom2 Custom3 Custom4
+HighContrastBWImageKey                        0x53412b74  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HighContrastBWParticle                        0x5341dfec  Off On
+HighContrastBWParticleSize                    0x5341e070  Small Medium Large
+HighContrastBWParticleStrength                0x5341e124  Low Mid High
+HighContrastBWShading                         0x5341b598  M4 M3 M2 M1 OFF P1 P2 P3 P4
+HighContrastBWSharpness                       0x53418a84  M4 M3 M2 M1 OFF P1 P2 P3 P4
+MonotoneGRClarityControl                      0x5341c7e0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+MonotoneGRColorToneMonotone                   0x53419924  OFF Sepia Red Green Blue Purple
+MonotoneGRContrast                            0x53413dbc  M4 M3 M2 M1 OFF P1 P2 P3 P4
+MonotoneGRContrastHighLight                   0x53415580  M4 M3 M2 M1 OFF P1 P2 P3 P4
+MonotoneGRContrastShadow                      0x53416d44  M4 M3 M2 M1 OFF P1 P2 P3 P4
+MonotoneGRFilterEffectCustom                  0x5341a2d8  OFF Custom1 Custom2 Custom3 Custom4
+MonotoneGRImageKey                            0x534125f8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+MonotoneGRParticle                            0x5341da28  Off On
+MonotoneGRParticleSize                        0x5341daac  Small Medium Large
+MonotoneGRParticleStrength                    0x5341db60  Low Mid High
+MonotoneGRShading                             0x5341b01c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+MonotoneGRSharpness                           0x53418508  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmClarityControl                    0x5341cd5c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmColorHue                          0x534113b0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmContrast                          0x5341450c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmContrastHighLight                 0x53415cd0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmContrastShadow                    0x53417494  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmImageKey                          0x53412d48  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmParticle                          0x5341e1d8  Off On
+NegativeFilmParticleSize                      0x5341e25c  Small Medium Large
+NegativeFilmParticleStrength                  0x5341e310  Low Mid High
+NegativeFilmSaturation                        0x53410168  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmShading                           0x5341b76c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+NegativeFilmSharpness                         0x53418c58  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmClarityControl                    0x5341cf30  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmColorHue                          0x53411584  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmContrast                          0x534146e0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmContrastHighLight                 0x53415ea4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmContrastShadow                    0x53417668  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmImageKey                          0x53412f1c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmParticle                          0x5341e3c4  Off On
+PositiveFilmParticleSize                      0x5341e448  Small Medium Large
+PositiveFilmParticleStrength                  0x5341e4fc  Low Mid High
+PositiveFilmSaturation                        0x5341033c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmShading                           0x5341b940  M4 M3 M2 M1 OFF P1 P2 P3 P4
+PositiveFilmSharpness                         0x53418e2c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroClarityControl                           0x5341d680  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroColorHue                                 0x53411cd4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroColorToneRetro                           0x5341a050  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroContrast                                 0x53414e30  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroContrastHighLight                        0x534165f4  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroContrastShadow                           0x53417db8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroImageKey                                 0x5341366c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroSaturation                               0x53410a8c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroShading                                  0x5341c090  M4 M3 M2 M1 OFF P1 P2 P3 P4
+RetroSharpness                                0x5341957c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+SoftMonotoneColorToneMonotone                 0x53419a68  OFF Sepia Red Green Blue Purple
+SoftMonotoneContrast                          0x53413f90  M4 M3 M2 M1 OFF P1 P2 P3 P4
+SoftMonotoneContrastHighLight                 0x53415754  M4 M3 M2 M1 OFF P1 P2 P3 P4
+SoftMonotoneContrastShadow                    0x53416f18  M4 M3 M2 M1 OFF P1 P2 P3 P4
+SoftMonotoneFilterEffectCustom                0x5341a3ec  OFF Custom1 Custom2 Custom3 Custom4
+SoftMonotoneImageKey                          0x534127cc  M4 M3 M2 M1 OFF P1 P2 P3 P4
+SoftMonotoneParticle                          0x5341dc14  Off On
+SoftMonotoneParticleSize                      0x5341dc98  Small Medium Large
+SoftMonotoneParticleStrength                  0x5341dd4c  Low Mid High
+SoftMonotoneShading                           0x5341b1f0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+SoftMonotoneSharpness                         0x534186dc  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardClarityControl                        0x5341c438  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardColorHue                              0x53411008  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardContrast                              0x53413a14  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardContrastHighLight                     0x534151d8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardContrastShadow                        0x5341699c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardImageKey                              0x53412250  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardSaturation                            0x5340fdc0  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardShading                               0x5341ac74  M4 M3 M2 M1 OFF P1 P2 P3 P4
+StandardSharpness                             0x53418160  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividClarityControl                           0x5341c60c  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividColorHue                                 0x534111dc  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividContrast                                 0x53413be8  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividContrastHighLight                        0x534153ac  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividContrastShadow                           0x53416b70  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividImageKey                                 0x53412424  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividSaturation                               0x5340ff94  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividShading                                  0x5341ae48  M4 M3 M2 M1 OFF P1 P2 P3 P4
+VividSharpness                                0x53418334  M4 M3 M2 M1 OFF P1 P2 P3 P4
+160 von 216

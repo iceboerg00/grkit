@@ -1,0 +1,21 @@
+UserData Set StillImageControlNo1 Retro
+UserData Set StillActiveImageControlSet No1
+UserData Set StillImageControlNo1ParamRetroSaturation P4
+UserData Set StillImageControlNo1ParamRetroColorHue P2
+UserData Set StillImageControlNo1ParamRetroImageKey OFF
+UserData Set StillImageControlNo1ParamRetroContrast OFF
+UserData Set StillImageControlNo1ParamRetroContrastHighLight P2
+UserData Set StillImageControlNo1ParamRetroContrastShadow P3
+UserData Set StillImageControlNo1ParamRetroSharpness P4
+UserData Set StillImageControlNo1ParamRetroColorToneRetro P1
+UserData Set StillImageControlNo1ParamRetroShading P2
+UserData Set StillImageControlNo1ParamRetroClarityControl M2
+UserData Set StillWhiteBalance Flu_D
+UserData Set StillWhiteBalanceFlu_DAdjustBA B1
+UserData Set StillWhiteBalanceFlu_DAdjustGM M3
+UserData Set StillHighlightCorrect On
+UserData Set StillShadowCorrect Mid
+UserData Set StillLensShadingCorrection Off
+UserData Set StillHighIsoNR Off
+camctl_set_user_still_imgctl_custom_name 1 "Indigo Film 800"
+

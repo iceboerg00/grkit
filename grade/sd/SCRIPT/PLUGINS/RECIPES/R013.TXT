@@ -1,0 +1,21 @@
+UserData Set StillImageControlNo1 CrossProcess
+UserData Set StillActiveImageControlSet No1
+UserData Set StillImageControlNo1ParamCrossProcessSaturation M2
+UserData Set StillImageControlNo1ParamCrossProcessColorHue OFF
+UserData Set StillImageControlNo1ParamCrossProcessImageKey M2
+UserData Set StillImageControlNo1ParamCrossProcessContrast OFF
+UserData Set StillImageControlNo1ParamCrossProcessContrastHighLight OFF
+UserData Set StillImageControlNo1ParamCrossProcessContrastShadow M1
+UserData Set StillImageControlNo1ParamCrossProcessSharpness OFF
+UserData Set StillImageControlNo1ParamCrossProcessShading P1
+UserData Set StillImageControlNo1ParamCrossProcessClarityControl OFF
+UserData Set StillImageControlNo1ParamCrossProcessColorToneCrossProcess Basic
+UserData Set StillWhiteBalance AutoStandard
+UserData Set StillWhiteBalanceAutoStandardAdjustBA NORMAL
+UserData Set StillWhiteBalanceAutoStandardAdjustGM NORMAL
+UserData Set StillHighlightCorrect On
+UserData Set StillShadowCorrect Auto
+UserData Set StillLensShadingCorrection On
+UserData Set StillHighIsoNR Off
+camctl_set_user_still_imgctl_custom_name 1 "Blueberry Film 400"
+

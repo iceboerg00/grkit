@@ -1,0 +1,14 @@
+UserData Set StillImageControlNo1 HdrCuisine
+UserData Set StillActiveImageControlSet No1
+UserData Set StillImageControlNo1ParamHdrCuisineSaturation P2
+UserData Set StillImageControlNo1ParamHdrCuisineColorHue OFF
+UserData Set StillImageControlNo1ParamHdrCuisineColorToneHdrIntense OFF
+UserData Set StillImageControlNo1ParamHdrCuisineHdrIntense High
+UserData Set StillWhiteBalance AutoStandard
+UserData Set StillWhiteBalanceAutoStandardAdjustBA A4
+UserData Set StillWhiteBalanceAutoStandardAdjustGM G1
+UserData Set StillHighlightCorrect Auto
+UserData Set StillShadowCorrect Low
+UserData Set StillHighIsoNR Low
+camctl_set_user_still_imgctl_custom_name 1 "Ricoh Hdr Film"
+

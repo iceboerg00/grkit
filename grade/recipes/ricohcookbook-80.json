@@ -1,0 +1,2486 @@
+[
+  {
+    "name": "1986 Negative",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 4,
+      "1": -2,
+      "2": -1,
+      "3": 2,
+      "4": 2,
+      "5": -3,
+      "6": -1,
+      "19": 0,
+      "20": -2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 10,
+      "wbGM": 8,
+      "highlight": "On",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/1986-negative. Set color temperature to 6700K on the camera. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Aged And Faded",
+    "version": 1,
+    "base_effect_id": 7,
+    "params": {
+      "0": 4,
+      "1": -2,
+      "2": -4,
+      "3": -2,
+      "4": 3,
+      "5": 2,
+      "6": -2,
+      "9": 1,
+      "19": -1,
+      "20": -4
+    },
+    "live": {
+      "WBMode": "shade",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 10,
+      "wbGM": 12,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/aged-and-faded. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Aged Print",
+    "version": 1,
+    "base_effect_id": 8,
+    "params": {
+      "0": 2,
+      "1": 0,
+      "2": -2,
+      "3": 2,
+      "4": 2,
+      "5": 4,
+      "6": -1,
+      "10": 1,
+      "19": -1,
+      "20": -2
+    },
+    "live": {
+      "WBMode": "cloud",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -4,
+      "wbGM": -6,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/aged-print. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Americana Color",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 2,
+      "1": 2,
+      "2": 1,
+      "3": 4,
+      "4": -3,
+      "5": 4,
+      "6": 1,
+      "19": 1,
+      "20": 2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -10,
+      "wbGM": 5,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/americana-color. Set color temperature to 5250K on the camera. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Analog Film 400",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": -2,
+      "5": 2,
+      "6": 0,
+      "19": -1,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -6,
+      "wbGM": 1,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Medium",
+      "notes": "Source: ricohcookbook.com/recipe/analog-film-400. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Analog Film",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 4,
+      "1": -4,
+      "2": 2,
+      "3": 4,
+      "4": -4,
+      "5": 4,
+      "6": 0,
+      "19": 0,
+      "20": -2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -1,
+      "wbGM": 6,
+      "highlight": "On",
+      "shadow": "Off",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/analog-film. Set color temperature to 6300K on the camera. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Analog Negative",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": -3,
+      "5": -1,
+      "6": 0,
+      "19": 0,
+      "20": 1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto",
+      "xv": "+0.3"
+    },
+    "manual": {
+      "wbAB": -4,
+      "wbGM": 1,
+      "highlight": "Auto",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Low",
+      "notes": "Source: ricohcookbook.com/recipe/analog-negative. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Asakura Negative",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": -2,
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 4,
+      "5": -4,
+      "6": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto"
+    },
+    "manual": {
+      "wbAB": 5,
+      "notes": "Source: ricohcookbook.com/recipe/asakura-negative. Author uses Multi-Auto WB (set on camera; preset uses Auto)"
+    }
+  },
+  {
+    "name": "Barbican Cinema Green",
+    "version": 1,
+    "base_effect_id": 15,
+    "params": {
+      "0": 1,
+      "1": 0,
+      "2": -1,
+      "3": 1,
+      "4": -2,
+      "5": 1,
+      "6": -1,
+      "8": 1,
+      "19": 0,
+      "20": 0,
+      "21": 1,
+      "22": 0,
+      "23": 0
+    },
+    "live": {
+      "WBMode": "autoWhite"
+    },
+    "manual": {
+      "notes": "Source: ricohcookbook.com/recipe/barbican-cinema-green"
+    }
+  },
+  {
+    "name": "Bennett 800",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 3,
+      "1": -1,
+      "2": 0,
+      "3": 2,
+      "4": -2,
+      "5": -4,
+      "6": 0,
+      "19": 0,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -14,
+      "wbGM": 2,
+      "highlight": "On",
+      "shadow": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/bennett-800"
+    }
+  },
+  {
+    "name": "Bennetts Bw800",
+    "version": 1,
+    "base_effect_id": 2,
+    "params": {
+      "2": -2,
+      "3": 4,
+      "4": -2,
+      "5": -4,
+      "6": -1,
+      "7": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto",
+      "xv": "+0.3"
+    },
+    "manual": {
+      "wbAB": -14,
+      "wbGM": 2,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/bennetts-bw800. ISO: ISO 800 base, up to 6400"
+    }
+  },
+  {
+    "name": "Black And White Negative",
+    "version": 1,
+    "base_effect_id": 5,
+    "params": {
+      "2": 1,
+      "3": -2,
+      "4": -4,
+      "5": 0,
+      "6": -1,
+      "7": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": -1,
+      "20": 2,
+      "21": 1,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "dayWhiteFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -14,
+      "wbGM": 14,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/black-and-white-negative. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Blueberry Film 400",
+    "version": 1,
+    "base_effect_id": 16,
+    "params": {
+      "0": -2,
+      "1": 0,
+      "2": -2,
+      "3": 0,
+      "4": 0,
+      "5": -1,
+      "6": 0,
+      "19": 1,
+      "20": 0,
+      "25": 0
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "highlight": "On",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/blueberry-film-400. Toning on camera: Magenta (no JSON mapping). ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Bw Film",
+    "version": 1,
+    "base_effect_id": 4,
+    "params": {
+      "2": 1,
+      "3": 4,
+      "4": 2,
+      "5": 3,
+      "6": 0,
+      "7": 0,
+      "19": 0,
+      "20": -2,
+      "21": 1,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "cloud",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -10,
+      "wbGM": 10,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/bw-film. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Bw Negative Red Filter",
+    "version": 1,
+    "base_effect_id": 4,
+    "params": {
+      "2": 1,
+      "3": 2,
+      "4": 4,
+      "5": -4,
+      "6": 2,
+      "7": 0,
+      "19": -1,
+      "20": -2,
+      "21": 1,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylightFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 2,
+      "wbGM": -14,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/bw-negative-red-filter. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Candy Color 400",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 4,
+      "1": -2,
+      "2": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "19": 1,
+      "20": 4,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbGM": -2,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/candy-color-400. Set color temperature to 5700K on the camera. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Chrome Slide",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 3,
+      "1": 3,
+      "2": 1,
+      "3": 1,
+      "4": -2,
+      "5": 4,
+      "6": 0,
+      "19": 0,
+      "20": 1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "cloud",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 8,
+      "wbGM": 8,
+      "highlight": "On",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/chrome-slide. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Classic Chrome But Better",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 0,
+      "1": -2,
+      "2": 3,
+      "3": 2,
+      "4": 1,
+      "5": 0,
+      "6": -1,
+      "19": 1,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -13,
+      "wbGM": 6,
+      "highlight": "Auto",
+      "shadow": "High",
+      "noise": "Low",
+      "notes": "Source: ricohcookbook.com/recipe/classic-chrome-but-better. Set color temperature to 3700K on the camera. ISO: ISO 400 fixed"
+    }
+  },
+  {
+    "name": "Classic Emulsion",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 1,
+      "1": -3,
+      "2": 1,
+      "3": 2,
+      "4": -3,
+      "5": 1,
+      "6": -1,
+      "19": 0,
+      "20": -2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 5,
+      "wbGM": 12,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/classic-emulsion. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Color Film",
+    "version": 1,
+    "base_effect_id": 0,
+    "params": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 2,
+      "5": -4,
+      "6": 1,
+      "19": 0,
+      "20": -1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -9,
+      "wbGM": 2,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/color-film. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Cotton Color 400",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 0,
+      "1": 0,
+      "2": 2,
+      "3": 1,
+      "4": -1,
+      "5": -4,
+      "6": -2,
+      "19": 2,
+      "20": -2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 2,
+      "wbGM": 3,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "Off",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/cotton-color-400. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Dante Sisofo Street Bw",
+    "version": 1,
+    "base_effect_id": 5,
+    "params": {
+      "2": -2,
+      "3": 4,
+      "4": -4,
+      "5": 0,
+      "6": 4,
+      "7": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 4,
+      "20": 4,
+      "21": 1,
+      "22": 2,
+      "23": 2
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "notes": "Source: ricohcookbook.com/recipe/dante-sisofo-street-bw. ISO: ISO Auto 400-6400, minimum shutter 1/500. Metering: Highlight-weighted"
+    }
+  },
+  {
+    "name": "Dramatic Monochrome",
+    "version": 1,
+    "base_effect_id": 5,
+    "params": {
+      "2": -1,
+      "3": 3,
+      "4": -3,
+      "5": -3,
+      "6": 0,
+      "7": 0,
+      "12": 1,
+      "13": 0,
+      "14": 40,
+      "15": 0,
+      "16": 50,
+      "17": 0,
+      "18": 10,
+      "19": 0,
+      "20": 1,
+      "21": 1,
+      "22": 2,
+      "23": 2
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbGM": -14,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/dramatic-monochrome. Set color temperature to 10000K on the camera. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Ekta Slide",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 4,
+      "4": -4,
+      "5": 0,
+      "6": 1,
+      "19": 0,
+      "20": 1,
+      "21": 1,
+      "22": 0,
+      "23": 0
+    },
+    "live": {
+      "WBMode": "autoWhite",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -8,
+      "wbGM": 6,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/ekta-slide. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Ektacolor",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 4,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": -4,
+      "5": -3,
+      "6": -1,
+      "19": 0,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "dayWhiteFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -14,
+      "wbGM": 8,
+      "highlight": "Auto",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/ektacolor. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Elite Chrome",
+    "version": 1,
+    "base_effect_id": 0,
+    "params": {
+      "0": 4,
+      "1": -1,
+      "2": 1,
+      "3": 2,
+      "4": -4,
+      "5": -4,
+      "6": 1,
+      "19": 0,
+      "20": 2
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -12,
+      "wbGM": 3,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/elite-chrome. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Ethereal Film 200",
+    "version": 1,
+    "base_effect_id": 7,
+    "params": {
+      "0": 3,
+      "1": 0,
+      "2": 2,
+      "3": 2,
+      "4": 4,
+      "5": 0,
+      "6": 0,
+      "9": 1,
+      "19": 0,
+      "20": 0
+    },
+    "live": {
+      "WBMode": "cloud",
+      "sv": "auto"
+    },
+    "manual": {
+      "highlight": "Off",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Medium",
+      "notes": "Source: ricohcookbook.com/recipe/ethereal-film-200. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Expired Negative",
+    "version": 1,
+    "base_effect_id": 15,
+    "params": {
+      "0": -1,
+      "1": -1,
+      "2": -3,
+      "3": -3,
+      "4": 4,
+      "5": 4,
+      "6": -2,
+      "8": 2,
+      "19": -1,
+      "20": -3,
+      "21": 1,
+      "22": 2,
+      "23": 2
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 14,
+      "wbGM": 4,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/expired-negative. Set color temperature to 9700K on the camera. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Ferrania Solaris",
+    "version": 1,
+    "base_effect_id": 0,
+    "params": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 3,
+      "4": -3,
+      "5": 0,
+      "6": -2,
+      "19": 0,
+      "20": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -5,
+      "wbGM": -1,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/ferrania-solaris. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Film Look",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": -1,
+      "2": 1,
+      "3": 1,
+      "4": -4,
+      "5": 4,
+      "6": 0,
+      "19": 0,
+      "20": -2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -8,
+      "wbGM": 2,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/film-look. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Grotto 200",
+    "version": 1,
+    "base_effect_id": 1,
+    "params": {
+      "0": 0,
+      "1": -1,
+      "2": 1,
+      "3": 1,
+      "4": -3,
+      "5": -1,
+      "6": 0,
+      "19": 0,
+      "20": -1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto",
+      "xv": "-0.3"
+    },
+    "manual": {
+      "wbAB": -1,
+      "wbGM": -1,
+      "highlight": "On",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/grotto-200. ISO: ISO 200-1600. Metering: Multi-segment"
+    }
+  },
+  {
+    "name": "Iac Tri X",
+    "version": 1,
+    "base_effect_id": 2,
+    "params": {
+      "2": -1,
+      "3": 2,
+      "4": 0,
+      "5": -2,
+      "6": -1,
+      "7": 0,
+      "12": 1,
+      "13": 0,
+      "14": 50,
+      "15": 0,
+      "16": 20,
+      "17": -1,
+      "18": -10,
+      "19": 0,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "23": 0
+    },
+    "live": {
+      "WBMode": "auto"
+    },
+    "manual": {
+      "notes": "Source: ricohcookbook.com/recipe/iac-tri-x. Metering: Matrix / Highlight-Weighted"
+    }
+  },
+  {
+    "name": "Indigo Film 800",
+    "version": 1,
+    "base_effect_id": 8,
+    "params": {
+      "0": 4,
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 2,
+      "5": 3,
+      "6": 4,
+      "10": 1,
+      "19": 2,
+      "20": -2
+    },
+    "live": {
+      "WBMode": "daylightFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 1,
+      "wbGM": -3,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "Off",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/indigo-film-800. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Jill Corral Zurich",
+    "version": 1,
+    "base_effect_id": 15,
+    "params": {
+      "0": 4,
+      "1": -2,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": -4,
+      "8": 1,
+      "19": 0,
+      "20": -4,
+      "21": 1,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight"
+    },
+    "manual": {
+      "notes": "Source: ricohcookbook.com/recipe/jill-corral-zurich"
+    }
+  },
+  {
+    "name": "Kodak Chrome",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 3,
+      "1": -1,
+      "2": -2,
+      "3": -2,
+      "4": 2,
+      "5": -4,
+      "6": 1,
+      "19": 0,
+      "20": 2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -10,
+      "wbGM": 4,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/kodak-chrome. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Kodak Magenta Chrome",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 1,
+      "1": -4,
+      "2": 3,
+      "3": -3,
+      "4": -4,
+      "5": 4,
+      "6": -1,
+      "19": 0,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "cte",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -12,
+      "highlight": "On",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Low",
+      "notes": "Source: ricohcookbook.com/recipe/kodak-magenta-chrome. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Kodak Print",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": -1,
+      "2": 2,
+      "3": 3,
+      "4": -4,
+      "5": 4,
+      "6": -2,
+      "19": 0,
+      "20": -3,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylightFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 4,
+      "wbGM": 1,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/kodak-print. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Kodak Slide",
+    "version": 1,
+    "base_effect_id": 1,
+    "params": {
+      "0": 4,
+      "1": -2,
+      "2": 1,
+      "3": 4,
+      "4": -4,
+      "5": -4,
+      "6": 1,
+      "19": 0,
+      "20": 2
+    },
+    "live": {
+      "WBMode": "shade",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 7,
+      "wbGM": 2,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/kodak-slide. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Kodakolor",
+    "version": 1,
+    "base_effect_id": 0,
+    "params": {
+      "0": -4,
+      "1": 4,
+      "2": 1,
+      "3": 4,
+      "4": -4,
+      "5": 3,
+      "6": 1,
+      "19": 2,
+      "20": 2
+    },
+    "live": {
+      "WBMode": "shade",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 6,
+      "wbGM": 2,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/kodakolor. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Kodamax",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 4,
+      "1": -2,
+      "2": 0,
+      "3": 3,
+      "4": 0,
+      "5": -2,
+      "6": 0,
+      "19": 0,
+      "20": 1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -1,
+      "wbGM": 10,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/kodamax. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Kyo Night Bw",
+    "version": 1,
+    "base_effect_id": 2,
+    "params": {
+      "2": 0,
+      "3": 1,
+      "4": -1,
+      "5": 2,
+      "6": 0,
+      "7": 5,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "notes": "Source: ricohcookbook.com/recipe/kyo-night-bw. ISO: ISO Auto up to 10000, minimum shutter 1/320"
+    }
+  },
+  {
+    "name": "Lanzarote Cinema Yellow",
+    "version": 1,
+    "base_effect_id": 14,
+    "params": {
+      "0": 0,
+      "1": -1,
+      "2": 1,
+      "3": 0,
+      "4": -2,
+      "5": -1,
+      "6": 0,
+      "8": 1,
+      "19": 0,
+      "20": 0,
+      "21": 1,
+      "22": 0,
+      "23": 0
+    },
+    "live": {
+      "WBMode": "autoWarm"
+    },
+    "manual": {
+      "notes": "Source: ricohcookbook.com/recipe/lanzarote-cinema-yellow"
+    }
+  },
+  {
+    "name": "Lomo Color",
+    "version": 1,
+    "base_effect_id": 14,
+    "params": {
+      "0": 4,
+      "1": 3,
+      "2": 4,
+      "3": 3,
+      "4": -4,
+      "5": 4,
+      "6": -2,
+      "8": 2,
+      "19": -1,
+      "20": -2,
+      "21": 1,
+      "22": 0,
+      "23": 2
+    },
+    "live": {
+      "WBMode": "shade",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 10,
+      "wbGM": -4,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/lomo-color. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Lux Pastel",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 2,
+      "1": 0,
+      "2": 2,
+      "3": -2,
+      "4": -1,
+      "5": 3,
+      "6": 1,
+      "19": -1,
+      "20": 1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "cloud"
+    },
+    "manual": {
+      "highlight": "On",
+      "shadow": "High",
+      "noise": "High",
+      "notes": "Source: ricohcookbook.com/recipe/lux-pastel. Noise reduction detail: High-ISO Medium / Slow-SS On"
+    }
+  },
+  {
+    "name": "Monochrome Film",
+    "version": 1,
+    "base_effect_id": 2,
+    "params": {
+      "2": 3,
+      "3": 4,
+      "4": -4,
+      "5": -4,
+      "6": 1,
+      "7": 0,
+      "12": 1,
+      "13": 0,
+      "14": 40,
+      "15": 0,
+      "16": 50,
+      "17": 0,
+      "18": 10,
+      "19": -1,
+      "20": 2,
+      "21": 1,
+      "22": 0,
+      "23": 0
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/monochrome-film. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Moody Monochrome",
+    "version": 1,
+    "base_effect_id": 2,
+    "params": {
+      "2": 2,
+      "3": 4,
+      "4": -2,
+      "5": 2,
+      "6": -1,
+      "7": 0,
+      "12": 1,
+      "13": 0,
+      "14": 90,
+      "15": 0,
+      "16": 20,
+      "17": -1,
+      "18": -10,
+      "19": 0,
+      "20": 4,
+      "21": 1,
+      "22": 2,
+      "23": 2
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 14,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/moody-monochrome. Set color temperature to 2500K on the camera. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Natural Analog",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": -3,
+      "1": 1,
+      "2": 0,
+      "3": -2,
+      "4": 4,
+      "5": -2,
+      "6": 2,
+      "19": 1,
+      "20": 1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -7,
+      "wbGM": 1,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Medium",
+      "notes": "Source: ricohcookbook.com/recipe/natural-analog. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Natural Negative",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": -2,
+      "1": 2,
+      "2": -1,
+      "3": -2,
+      "4": 3,
+      "5": -4,
+      "6": 1,
+      "19": -1,
+      "20": 2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -8,
+      "wbGM": 2,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/natural-negative. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Negative Film Gold",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 4,
+      "1": 0,
+      "2": -1,
+      "3": -2,
+      "4": 0,
+      "5": -1,
+      "6": 2,
+      "19": 2,
+      "20": 2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -5,
+      "wbGM": -4,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "Off",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/negative-film-gold. Set color temperature to 6900K on the camera. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Ninzaburo Monotone",
+    "version": 1,
+    "base_effect_id": 2,
+    "params": {
+      "2": -2,
+      "3": 2,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "12": 1,
+      "13": 0,
+      "14": 90,
+      "15": 0,
+      "16": 20,
+      "17": -1,
+      "18": -10,
+      "19": 4,
+      "20": 0,
+      "21": 1,
+      "22": 2,
+      "23": 2
+    },
+    "live": {
+      "WBMode": "auto"
+    },
+    "manual": {
+      "notes": "Source: ricohcookbook.com/recipe/ninzaburo-monotone"
+    }
+  },
+  {
+    "name": "Nostalgic Negative Film V2",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": -3,
+      "2": 2,
+      "3": 3,
+      "4": -4,
+      "5": -1,
+      "6": 0,
+      "19": 0,
+      "20": 1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1"
+    },
+    "manual": {
+      "wbAB": -8,
+      "wbGM": 2,
+      "notes": "Source: ricohcookbook.com/recipe/nostalgic-negative-film-v2. Set color temperature to 7150K on the camera"
+    }
+  },
+  {
+    "name": "Panchromatic 400 Red",
+    "version": 1,
+    "base_effect_id": 4,
+    "params": {
+      "2": 1,
+      "3": 1,
+      "4": -2,
+      "5": 4,
+      "6": 1,
+      "7": 0,
+      "19": 0,
+      "20": 0,
+      "21": 1,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 10,
+      "wbGM": -2,
+      "highlight": "On",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/panchromatic-400-red. Set color temperature to 7000K on the camera. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Pastel Film 400",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": -4,
+      "2": 3,
+      "3": -2,
+      "4": 0,
+      "5": 3,
+      "6": 1,
+      "19": 1,
+      "20": 1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -8,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Medium",
+      "notes": "Source: ricohcookbook.com/recipe/pastel-film-400. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Portra 160 Chrizz Ocampo",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 3,
+      "1": -1,
+      "2": 3,
+      "3": -1,
+      "4": 2,
+      "5": -3,
+      "6": 0,
+      "19": 0,
+      "20": -4,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "shade"
+    },
+    "manual": {
+      "wbAB": -3,
+      "wbGM": 3,
+      "notes": "Source: ricohcookbook.com/recipe/portra-160-chrizz-ocampo"
+    }
+  },
+  {
+    "name": "Positive Emulsion",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 2,
+      "1": -3,
+      "2": 3,
+      "3": -1,
+      "4": -4,
+      "5": 4,
+      "6": -1,
+      "19": 0,
+      "20": -2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -9,
+      "wbGM": 1,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/positive-emulsion. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Pro Color",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 4,
+      "1": -2,
+      "2": 3,
+      "3": 3,
+      "4": -2,
+      "5": 4,
+      "6": -1,
+      "19": 0,
+      "20": -1,
+      "21": 1,
+      "22": 1,
+      "23": 0
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -10,
+      "wbGM": 5,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/pro-color. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Pushed Bw",
+    "version": 1,
+    "base_effect_id": 5,
+    "params": {
+      "2": 0,
+      "3": -2,
+      "4": -2,
+      "5": 2,
+      "6": 1,
+      "7": 0,
+      "12": 1,
+      "13": 0,
+      "14": 40,
+      "15": 0,
+      "16": 50,
+      "17": 0,
+      "18": 10,
+      "19": 0,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "23": 2
+    },
+    "live": {
+      "WBMode": "cloud",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 5,
+      "wbGM": 14,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/pushed-bw. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Black Pro-Mist 1/8 (49mm)",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": -4,
+      "5": -1,
+      "6": 1,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto"
+    },
+    "manual": {
+      "wbAB": -6,
+      "highlight": "Auto",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/reggie-color-negative"
+    }
+  },
+  {
+    "name": "Reggies Monotone Standard",
+    "version": 1,
+    "base_effect_id": 2,
+    "params": {
+      "2": -1,
+      "3": 2,
+      "4": -4,
+      "5": -4,
+      "6": 1,
+      "7": 0,
+      "12": 1,
+      "13": 0,
+      "14": 90,
+      "15": 0,
+      "16": 20,
+      "17": -1,
+      "18": -10,
+      "19": 0,
+      "20": 0,
+      "21": 1,
+      "22": 0,
+      "23": 0
+    },
+    "live": {
+      "WBMode": "auto"
+    },
+    "manual": {
+      "highlight": "Auto",
+      "shadow": "Medium",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/reggies-monotone-standard"
+    }
+  },
+  {
+    "name": "Retro Chrome 1600",
+    "version": 1,
+    "base_effect_id": 8,
+    "params": {
+      "0": 4,
+      "1": -4,
+      "2": 0,
+      "3": 2,
+      "4": 0,
+      "5": 0,
+      "6": -3,
+      "10": 1,
+      "19": 3,
+      "20": 2
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto",
+      "xv": "0.0"
+    },
+    "manual": {
+      "wbGM": 1,
+      "highlight": "Auto",
+      "shadow": "High",
+      "noise": "Low",
+      "notes": "Source: ricohcookbook.com/recipe/retro-chrome-1600. ISO: ISO 1600 fixed"
+    }
+  },
+  {
+    "name": "Retro Print",
+    "version": 1,
+    "base_effect_id": 8,
+    "params": {
+      "0": 4,
+      "1": 1,
+      "2": 1,
+      "3": 4,
+      "4": -3,
+      "5": 4,
+      "6": 0,
+      "10": 1,
+      "19": 0,
+      "20": 2
+    },
+    "live": {
+      "WBMode": "coolWhiteFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -12,
+      "wbGM": 10,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/retro-print. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Ricoh Hdr Film",
+    "version": 1,
+    "base_effect_id": 9,
+    "params": {
+      "0": 2,
+      "1": 0,
+      "11": 0,
+      "24": 2
+    },
+    "live": {
+      "WBMode": "auto",
+      "xv": "+0.3"
+    },
+    "manual": {
+      "wbAB": -4,
+      "wbGM": 1,
+      "highlight": "Auto",
+      "shadow": "Low",
+      "noise": "Low",
+      "notes": "Source: ricohcookbook.com/recipe/ricoh-hdr-film"
+    }
+  },
+  {
+    "name": "Ritchie Positive Film",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 3,
+      "1": 3,
+      "2": 2,
+      "3": 4,
+      "4": -2,
+      "5": 4,
+      "6": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -7,
+      "wbGM": 3,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/ritchie-positive-film. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Royal Supra",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 2,
+      "1": -4,
+      "2": 1,
+      "3": 4,
+      "4": -4,
+      "5": -3,
+      "6": 1,
+      "19": 0,
+      "20": 4,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "shade",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 6,
+      "wbGM": 4,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/royal-supra. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Samuel Lintaro Cinema Green",
+    "version": 1,
+    "base_effect_id": 15,
+    "params": {
+      "0": 3,
+      "1": 0,
+      "2": 2,
+      "3": -1,
+      "4": -1,
+      "5": -3,
+      "6": -2,
+      "8": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "auto"
+    },
+    "manual": {
+      "wbAB": -4,
+      "wbGM": -3,
+      "highlight": "Auto",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/samuel-lintaro-cinema-green"
+    }
+  },
+  {
+    "name": "Shady Summer Film",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 3,
+      "1": -2,
+      "2": 2,
+      "3": 3,
+      "4": 1,
+      "5": 0,
+      "6": 1,
+      "19": 1,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto",
+      "xv": "0.0"
+    },
+    "manual": {
+      "wbAB": -5,
+      "wbGM": 5,
+      "highlight": "Auto",
+      "shadow": "High",
+      "noise": "Low",
+      "notes": "Source: ricohcookbook.com/recipe/shady-summer-film. Set color temperature to 3800K on the camera. ISO: ISO 400 fixed"
+    }
+  },
+  {
+    "name": "Summer Bleach Film",
+    "version": 1,
+    "base_effect_id": 7,
+    "params": {
+      "0": 4,
+      "1": -2,
+      "2": 4,
+      "3": 3,
+      "4": 4,
+      "5": 0,
+      "6": 1,
+      "9": 1,
+      "19": -1,
+      "20": 1
+    },
+    "live": {
+      "WBMode": "auto",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -2,
+      "highlight": "On",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/summer-bleach-film. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Summer Green",
+    "version": 1,
+    "base_effect_id": 16,
+    "params": {
+      "0": -1,
+      "1": 4,
+      "2": -1,
+      "3": -4,
+      "4": -4,
+      "5": 4,
+      "6": -1,
+      "19": 0,
+      "20": -1,
+      "25": 0
+    },
+    "live": {
+      "WBMode": "dayWhiteFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 6,
+      "wbGM": 5,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/summer-green. Toning on camera: Y (no JSON mapping). ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Travelog",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 4,
+      "1": -1,
+      "2": 3,
+      "3": 0,
+      "4": -3,
+      "5": 1,
+      "6": -1,
+      "19": 0,
+      "20": -2,
+      "21": 1,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "cloud",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 9,
+      "wbGM": 8,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/travelog. ISO: Up to ISO 6400"
+    }
+  },
+  {
+    "name": "Turquoise Film 200",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": -3,
+      "2": 2,
+      "3": 2,
+      "4": -2,
+      "5": 4,
+      "6": 0,
+      "19": 0,
+      "20": 2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbGM": 5,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/turquoise-film-200. Set color temperature to 5000K on the camera. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Vibrant Analog",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 4,
+      "1": 3,
+      "2": 1,
+      "3": 2,
+      "4": -3,
+      "5": 4,
+      "6": -1,
+      "19": 0,
+      "20": 3,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -14,
+      "wbGM": 5,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/vibrant-analog. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Vibrant Negative",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 4,
+      "1": 4,
+      "2": 2,
+      "3": -2,
+      "4": 3,
+      "5": -4,
+      "6": 0,
+      "19": 0,
+      "20": 2,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "dayWhiteFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -11,
+      "wbGM": 9,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/vibrant-negative. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Vibrant Nostalgia",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 3,
+      "1": -3,
+      "2": 3,
+      "3": -2,
+      "4": -4,
+      "5": 4,
+      "6": -1,
+      "19": 0,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 6,
+      "wbGM": 6,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/vibrant-nostalgia. Set color temperature to 6900K on the camera. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Vibrant Teal",
+    "version": 1,
+    "base_effect_id": 1,
+    "params": {
+      "0": 3,
+      "1": -4,
+      "2": 2,
+      "3": 2,
+      "4": -3,
+      "5": 4,
+      "6": 0,
+      "19": 0,
+      "20": 2
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbGM": 4,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/vibrant-teal. Set color temperature to 5200K on the camera. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Vintage Fade Film",
+    "version": 1,
+    "base_effect_id": 7,
+    "params": {
+      "0": 3,
+      "1": 0,
+      "2": 4,
+      "3": 0,
+      "4": 3,
+      "5": -2,
+      "6": 0,
+      "9": 1,
+      "19": 1,
+      "20": -1
+    },
+    "live": {
+      "WBMode": "daylightFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Auto",
+      "notes": "Source: ricohcookbook.com/recipe/vintage-fade-film. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Vintage Film",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": -1,
+      "1": -4,
+      "2": 4,
+      "3": -3,
+      "4": -4,
+      "5": -4,
+      "6": -2,
+      "19": 0,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "shade",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -6,
+      "wbGM": 2,
+      "highlight": "On",
+      "shadow": "Auto",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/vintage-film. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Vintage Print",
+    "version": 1,
+    "base_effect_id": 8,
+    "params": {
+      "0": 4,
+      "1": 0,
+      "2": 4,
+      "3": 0,
+      "4": -4,
+      "5": 4,
+      "6": -4,
+      "10": 1,
+      "19": 0,
+      "20": -4
+    },
+    "live": {
+      "WBMode": "daylightFluorescent",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 2,
+      "wbGM": 10,
+      "highlight": "On",
+      "shadow": "Low",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/vintage-print. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Warm Negative",
+    "version": 1,
+    "base_effect_id": 6,
+    "params": {
+      "0": 1,
+      "1": 4,
+      "2": 1,
+      "3": -1,
+      "4": -4,
+      "5": -3,
+      "6": 1,
+      "19": 0,
+      "20": -1,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -14,
+      "wbGM": -5,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/warm-negative. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Warm Spring Evening",
+    "version": 1,
+    "base_effect_id": 13,
+    "params": {
+      "0": 2,
+      "1": 1,
+      "2": -1,
+      "3": 2,
+      "4": 1,
+      "5": 0,
+      "6": 0,
+      "19": -3,
+      "20": 0,
+      "21": 0,
+      "22": 1,
+      "23": 1
+    },
+    "live": {
+      "WBMode": "daylight",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": 4,
+      "wbGM": 11,
+      "highlight": "On",
+      "shadow": "High",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/warm-spring-evening. ISO: ISO Auto up to 6400"
+    }
+  },
+  {
+    "name": "Xpro Teal",
+    "version": 1,
+    "base_effect_id": 16,
+    "params": {
+      "0": 2,
+      "1": -2,
+      "2": -2,
+      "3": -4,
+      "4": -4,
+      "5": -4,
+      "6": -1,
+      "19": 0,
+      "20": -2,
+      "25": 0
+    },
+    "live": {
+      "WBMode": "colorTemp1",
+      "sv": "auto"
+    },
+    "manual": {
+      "wbAB": -5,
+      "wbGM": 1,
+      "highlight": "On",
+      "shadow": "Medium",
+      "peripheral": "On",
+      "noise": "Off",
+      "notes": "Source: ricohcookbook.com/recipe/xpro-teal. Set color temperature to 5500K on the camera. ISO: ISO Auto up to 6400"
+    }
+  }
+]

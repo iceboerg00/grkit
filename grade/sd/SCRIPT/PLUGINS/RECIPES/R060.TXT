@@ -1,0 +1,20 @@
+UserData Set StillImageControlNo1 Retro
+UserData Set StillActiveImageControlSet No1
+UserData Set StillImageControlNo1ParamRetroSaturation P4
+UserData Set StillImageControlNo1ParamRetroColorHue M4
+UserData Set StillImageControlNo1ParamRetroImageKey OFF
+UserData Set StillImageControlNo1ParamRetroContrast P2
+UserData Set StillImageControlNo1ParamRetroContrastHighLight OFF
+UserData Set StillImageControlNo1ParamRetroContrastShadow OFF
+UserData Set StillImageControlNo1ParamRetroSharpness M3
+UserData Set StillImageControlNo1ParamRetroColorToneRetro P1
+UserData Set StillImageControlNo1ParamRetroShading P3
+UserData Set StillImageControlNo1ParamRetroClarityControl P2
+UserData Set StillWhiteBalance Daylight
+UserData Set StillWhiteBalanceDaylightAdjustBA NORMAL
+UserData Set StillWhiteBalanceDaylightAdjustGM G1
+UserData Set StillHighlightCorrect Auto
+UserData Set StillShadowCorrect High
+UserData Set StillHighIsoNR Low
+camctl_set_user_still_imgctl_custom_name 1 "Retro Chrome 1600"
+

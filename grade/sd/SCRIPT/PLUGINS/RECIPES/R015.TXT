@@ -1,0 +1,22 @@
+UserData Set StillImageControlNo1 HardMonotone
+UserData Set StillActiveImageControlSet No1
+UserData Set StillImageControlNo1ParamHardMonotoneImageKey P1
+UserData Set StillImageControlNo1ParamHardMonotoneContrast P2
+UserData Set StillImageControlNo1ParamHardMonotoneContrastHighLight P4
+UserData Set StillImageControlNo1ParamHardMonotoneContrastShadow M4
+UserData Set StillImageControlNo1ParamHardMonotoneSharpness P2
+UserData Set StillImageControlNo1ParamHardMonotoneColorToneMonotone OFF
+UserData Set StillImageControlNo1ParamHardMonotoneShading M1
+UserData Set StillImageControlNo1ParamHardMonotoneClarityControl M2
+UserData Set StillImageControlNo1ParamHardMonotoneParticle On
+UserData Set StillImageControlNo1ParamHardMonotoneParticleSize Medium
+UserData Set StillImageControlNo1ParamHardMonotoneParticleStrength Mid
+UserData Set StillWhiteBalance Flu_D
+UserData Set StillWhiteBalanceFlu_DAdjustBA B2
+UserData Set StillWhiteBalanceFlu_DAdjustGM M14
+UserData Set StillHighlightCorrect On
+UserData Set StillShadowCorrect Mid
+UserData Set StillLensShadingCorrection On
+UserData Set StillHighIsoNR Off
+camctl_set_user_still_imgctl_custom_name 1 "Bw Negative Red Filter"
+
