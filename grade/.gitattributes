@@ -1,0 +1,2 @@
+# The camera reads these files byte for byte (CRLF, empty last line).
+sd/** -text
